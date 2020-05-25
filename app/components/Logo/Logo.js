@@ -16,7 +16,7 @@ const styles = {
     padding: '10px',
   },
   logoImage: {
-    height: '100%',
+    height: '32px',
   },
 };
 
