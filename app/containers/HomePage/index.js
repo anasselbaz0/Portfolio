@@ -1,18 +1,19 @@
-/*
- * HomePage
- *
- * This is the first thing users see of our App, at the '/' route
- *
- */
-
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import { connect } from 'react-redux';
+import withStyles from '@material-ui/core/styles/withStyles';
+import PropTypes from 'prop-types';
 
-export default function HomePage() {
-  return (
-    <h1>
-      <FormattedMessage {...messages.header} />
-    </h1>
-  );
+const styles = {
+  homePage: {},
+};
+
+function HomePage(props) {
+  const { classes } = props;
+  return <div className={classes.homePage}>hooome</div>;
 }
+
+HomePage.propTypes = {
+  classes: PropTypes.array.isRequired,
+};
+
+export default withStyles(styles)(connect()(HomePage));

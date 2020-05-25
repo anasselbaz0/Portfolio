@@ -1,23 +1,29 @@
-/**
- *
- * App.js
- *
- * This component is the skeleton around the actual pages, and should only
- * contain code that should be seen on all pages. (e.g. navigation bar)
- *
- */
-
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import HomePage from 'containers/HomePage/Loadable';
-import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import { withStyles } from '@material-ui/core';
+import PropTypes from 'prop-types';
+import HomePage from '../HomePage/Loadable';
+import NotFoundPage from '../NotFoundPage/Loadable';
 
 import GlobalStyle from '../../global-styles';
+import COLORS from '../../utils/colors';
+import Masthead from '../../components/Masthead/Masthead';
 
-export default function App() {
+const styles = {
+  application: {
+    fontFamily: 'Montserrat',
+    backgroundColor: COLORS.AppBackground,
+    height: '100vh',
+  },
+};
+
+function App(props) {
+  const { classes } = props;
   return (
-    <div>
+    <div className={classes.application}>
+      <Masthead />
+
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route component={NotFoundPage} />
@@ -26,3 +32,9 @@ export default function App() {
     </div>
   );
 }
+
+App.propTypes = {
+  classes: PropTypes.array.isRequired,
+};
+
+export default withStyles(styles)(App);
