@@ -15,6 +15,10 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+    position: 'absolute',
+    top: '0',
+    zIndex: '2021',
+    width: '100%',
   },
   space: {
     flex: '1',

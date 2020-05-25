@@ -4,7 +4,9 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import PropTypes from 'prop-types';
 
 const styles = {
-  homePage: {},
+  homePage: {
+    padding: '1rem',
+  },
 };
 
 function HomePage(props) {
