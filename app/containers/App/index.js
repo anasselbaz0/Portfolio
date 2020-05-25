@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import { withStyles } from '@material-ui/core';
 import PropTypes from 'prop-types';
@@ -34,7 +34,7 @@ function App(props) {
 }
 
 App.propTypes = {
-  classes: PropTypes.array.isRequired,
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(App);

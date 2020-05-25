@@ -13,7 +13,7 @@ function HomePage(props) {
 }
 
 HomePage.propTypes = {
-  classes: PropTypes.array.isRequired,
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(connect()(HomePage));
