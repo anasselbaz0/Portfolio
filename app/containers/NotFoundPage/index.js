@@ -2,8 +2,9 @@ import React from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import { Button } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import COLORS from '../../utils/colors';
 import './glitch.css';
+import { Link } from 'react-router-dom';
+import COLORS from '../../utils/colors';
 
 const styles = {
   notFoundPage: {
@@ -24,6 +25,10 @@ const styles = {
     color: COLORS.WHITE,
     padding: '17px 40px',
     fontSize: '1.2rem',
+  },
+  linkStyle: {
+    textDecoration: 'none',
+    color: COLORS.ACCENT,
   },
 };
 
@@ -50,7 +55,9 @@ class Index extends React.Component {
           What you&apos;re looking for may have been misplaced in Long Time
           Memory.
         </div>
-        <Button className={classes.button}>Back to home</Button>
+        <Link className={classes.linkStyle} to="/">
+          <Button className={classes.button}>Back to home</Button>
+        </Link>
       </div>
     );
   }

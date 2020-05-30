@@ -43,33 +43,62 @@ const styles = {
   },
 };
 
-function Drawer(props) {
-  const { classes } = props;
-  return (
-    <div className={classes.drawer}>
-      <div className={classes.links}>
-        <Link className={classes.linkStyle} to="/">
-          <div className={classes.activeLink}>home</div>
-        </Link>
-        <Link className={classes.linkStyle} to="/about">
-          <div className={classes.link}>about</div>
-        </Link>
-        <Link className={classes.linkStyle} to="/projects">
-          <div className={classes.link}>projects</div>
-        </Link>
-        <Link className={classes.linkStyle} to="/resume">
-          <div className={classes.link}>resume</div>
-        </Link>
-        <Link className={classes.linkStyle} to="/contact">
-          <div className={classes.link}>contact me</div>
-        </Link>
+class Drawer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      links: ['home', 'projects', 'about', 'resume', 'contact me'],
+    };
+  }
+
+  render() {
+    const { classes } = this.props;
+    return (
+      <div className={classes.drawer}>
+        <div className={classes.links}>
+          {this.state.links.map(link => {
+            const uri = `/${link.replace(/ /g, '')}`;
+            if (link === 'home')
+              return (
+                <Link key={link} className={classes.linkStyle} to="/">
+                  <div
+                    className={
+                      this.props.pathname === '/'
+                        ? classes.activeLink
+                        : classes.link
+                    }
+                  >
+                    {link}
+                  </div>
+                </Link>
+              );
+            return (
+              <Link key={link} className={classes.linkStyle} to={uri}>
+                <div
+                  className={
+                    this.props.pathname === `/${link.replace(/ /g, '')}`
+                      ? classes.activeLink
+                      : classes.link
+                  }
+                >
+                  {link}
+                </div>
+              </Link>
+            );
+          })}
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 Drawer.propTypes = {
   classes: PropTypes.object.isRequired,
+  pathname: PropTypes.string.isRequired,
 };
 
-export default withStyles(styles)(connect()(Drawer));
+const mapStateToProps = state => ({
+  pathname: state.router.location.pathname,
+});
+
+export default connect(mapStateToProps)(withStyles(styles)(connect()(Drawer)));

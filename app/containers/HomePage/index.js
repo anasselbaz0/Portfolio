@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import withStyles from '@material-ui/core/styles/withStyles';
 import PropTypes from 'prop-types';
 import { Button } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 import COLORS from '../../utils/colors';
 
 const styles = {
@@ -46,6 +47,10 @@ const styles = {
     padding: '17px 40px',
     fontSize: '1.2rem',
   },
+  linkStyle: {
+    textDecoration: 'none',
+    color: COLORS.ACCENT,
+  },
 };
 
 function HomePage(props) {
@@ -68,7 +73,9 @@ function HomePage(props) {
           !
         </div>
         <div className={classes.actions}>
-          <Button className={classes.button}> See my work </Button>
+          <Link className={classes.linkStyle} to="/projects">
+            <Button className={classes.button}>See my work</Button>
+          </Link>
         </div>
       </div>
       <div className={classes.who}>

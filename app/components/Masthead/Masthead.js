@@ -41,6 +41,10 @@ const styles = {
     color: COLORS.ACCENT,
     fontFamily: 'Roboto',
   },
+  linkStyle: {
+    textDecoration: 'none',
+    color: COLORS.ACCENT,
+  },
 };
 
 function Masthead(props) {
@@ -50,7 +54,7 @@ function Masthead(props) {
       <Logo />
       <div className={classes.space}>
         <div>
-          <Link to="/">
+          <Link className={classes.linkStyle} to="/">
             <span className={classes.logo}>Anass ELBAZ</span>
           </Link>
         </div>
