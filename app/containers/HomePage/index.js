@@ -29,6 +29,7 @@ const styles = {
     letterSpacing: '2px',
     color: COLORS.ACCENT,
     fontSize: '3rem',
+    textAlign: 'center',
   },
   subtitle: {
     textTransform: 'capitalize',
@@ -37,6 +38,7 @@ const styles = {
     maxWidth: '60%',
     fontWeight: '600',
     margin: '2rem',
+    textAlign: 'center',
   },
   button: {
     backgroundImage:
@@ -53,17 +55,17 @@ function HomePage(props) {
     <div className={classes.homePage}>
       <div className={classes.content}>
         <div className={classes.title}>
-          not your <br /> avarage <br /> softwar <br /> engineer
+          not your <br /> average <br /> software <br /> engineer
         </div>
         <div className={classes.subtitle}>
           Get ready to turn your{' '}
-          <b>
-            <i>ideas</i>
-          </b>{' '}
+          <i>
+            <b>ideas</b>
+          </i>{' '}
           to{' '}
-          <b>
-            <i>reality</i>
-          </b>{' '}
+          <i>
+            <b>reality</b>
+          </i>{' '}
           !
         </div>
         <div className={classes.actions}>
