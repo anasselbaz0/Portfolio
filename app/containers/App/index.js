@@ -19,7 +19,8 @@ const styles = {
     flexDirection: 'column',
   },
   content: {
-    margin: '56px 0 0 100px',
+    padding: '56px 0 0 150px',
+    height: '100vh',
   },
 };
 

@@ -4,6 +4,7 @@ const COLORS = {
   WHITE: '#fff',
   GRAY: '#6A6A6A',
   ACCENT: '#143240',
+  SECENDARY: '#41C8F4',
 };
 
 export default COLORS;
