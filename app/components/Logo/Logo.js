@@ -12,7 +12,7 @@ const styles = {
     alignItems: 'center',
     backgroundColor: COLORS.WHITE,
     height: '100%',
-    width: '100px',
+    width: '150px',
     padding: '10px',
   },
   logoImage: {

@@ -5,15 +5,21 @@ import { withStyles } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import HomePage from '../HomePage/Loadable';
 import NotFoundPage from '../NotFoundPage/Loadable';
-
-import GlobalStyle from '../../global-styles';
 import COLORS from '../../utils/colors';
 import Masthead from '../../components/Masthead/Masthead';
+import Drawer from '../../components/Drawer/Drawer';
 
 const styles = {
   application: {
     fontFamily: 'Montserrat',
     backgroundColor: COLORS.AppBackground,
+    height: '100vh',
+    position: 'relative',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  content: {
+    padding: '56px 0 0 150px',
     height: '100vh',
   },
 };
@@ -21,15 +27,19 @@ const styles = {
 function App(props) {
   const { classes } = props;
   return (
-    <div className={classes.application}>
+    <React.Fragment>
       <Masthead />
-
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route component={NotFoundPage} />
-      </Switch>
-      <GlobalStyle />
-    </div>
+      <Drawer />
+      <div className={classes.application}>
+        <div className={classes.content}>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route component={NotFoundPage} />
+          </Switch>
+        </div>
+        {/* <GlobalStyle /> */}
+      </div>
+    </React.Fragment>
   );
 }
 
