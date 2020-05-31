@@ -38,7 +38,7 @@ const styles = {
     fontSize: '1.2rem',
     maxWidth: '60%',
     fontWeight: '600',
-    margin: '2rem',
+    margin: '2rem 0 3rem 0',
     textAlign: 'center',
   },
   button: {
