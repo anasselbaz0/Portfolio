@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import COLORS from '../../utils/colors';
-import Logo from '../Logo/Logo';
 import github from '../../images/github.png';
+import Navigation from '../Navigation/Navigation';
 
 const styles = {
   masthead: {
@@ -29,6 +29,7 @@ const styles = {
     padding: '0 16px',
   },
   link: {
+    padding: '0 20px',
     height: '30px',
     borderRadius: '30px',
     backgroundColor: COLORS.WHITE,
@@ -51,13 +52,14 @@ function Masthead(props) {
   const { classes } = props;
   return (
     <div className={classes.masthead}>
-      <Logo />
+      {/* <Logo /> */}
       <div className={classes.space}>
         <div>
           <Link className={classes.linkStyle} to="/">
             <span className={classes.logo}>Anass ELBAZ</span>
           </Link>
         </div>
+        <Navigation />
         <div>
           <a target="_blank" href="https://github.com/anasselbaz0">
             <Button variant="outlined" size="small" className={classes.link}>

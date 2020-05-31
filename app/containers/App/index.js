@@ -7,7 +7,8 @@ import HomePage from '../HomePage/Loadable';
 import NotFoundPage from '../NotFoundPage/Loadable';
 import COLORS from '../../utils/colors';
 import Masthead from '../../components/Masthead/Masthead';
-import Drawer from '../../components/Drawer/Drawer';
+import ProjectsPage from '../ProjectsPage/ProjectsPage';
+import GlobalStyle from '../../global-styles';
 
 const styles = {
   application: {
@@ -19,8 +20,11 @@ const styles = {
     flexDirection: 'column',
   },
   content: {
-    padding: '56px 0 0 150px',
+    paddingTop: '56px',
     height: '100vh',
+    width: '80%',
+    maxWidth: '1200px',
+    margin: 'auto',
   },
 };
 
@@ -29,15 +33,15 @@ function App(props) {
   return (
     <React.Fragment>
       <Masthead />
-      <Drawer />
       <div className={classes.application}>
         <div className={classes.content}>
           <Switch>
             <Route exact path="/" component={HomePage} />
+            <Route exact path="/projects" component={ProjectsPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </div>
-        {/* <GlobalStyle /> */}
+        <GlobalStyle />
       </div>
     </React.Fragment>
   );
