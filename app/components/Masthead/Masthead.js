@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom';
 import COLORS from '../../utils/colors';
 import github from '../../images/github.png';
+import linkedin from '../../images/linkedin.png';
 import Navigation from '../Navigation/Navigation';
 
 const styles = {
@@ -29,7 +30,8 @@ const styles = {
     padding: '0 16px',
   },
   link: {
-    padding: '0 20px',
+    marginLeft: '10px',
+    padding: '0 10px',
     height: '30px',
     borderRadius: '30px',
     backgroundColor: COLORS.WHITE,
@@ -67,6 +69,18 @@ function Masthead(props) {
                 className={classes.linkContent}
                 src={github}
                 alt="My Github Account"
+              />
+            </Button>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/anass-elbaz-336809171/"
+          >
+            <Button variant="outlined" size="small" className={classes.link}>
+              <img
+                className={classes.linkContent}
+                src={linkedin}
+                alt="My LinkedIn Profile"
               />
             </Button>
           </a>

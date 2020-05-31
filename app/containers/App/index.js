@@ -22,9 +22,9 @@ const styles = {
   content: {
     paddingTop: '56px',
     height: '100vh',
-    width: '80%',
-    maxWidth: '1200px',
-    margin: 'auto',
+    // width: '80%',
+    // maxWidth: '1200px',
+    // margin: 'auto',
   },
 };
 
