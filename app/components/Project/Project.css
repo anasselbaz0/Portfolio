@@ -1,0 +1,63 @@
+
+/* Reverse Mask */
+.mask {
+
+  width: 100%;
+  text-align: center;
+
+
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+
+  /* Background to mask */
+  background: url("https://bit.ly/ZxCkSc");
+  background-position: 0 50%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
+
+  /* Text size and style */
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -10px;
+  padding: 0 15px;
+
+  padding: inherit;
+
+}
+
+/* Variants */
+
+.one {
+  color: transparent;
+  text-stroke: 25px;
+  background-position: 0 25%;
+  text-shadow: 0 0 15px rgba(221,221,221,0.2);
+  transition: text-shadow 0.35s linear;
+}
+.one:hover {
+  text-shadow: 0 0 5px rgba(221,221,221,1), 0 0 0 #ddd;
+}
+
+.two {
+  color: transparent;
+  text-stroke: 5px;
+  background-position: 0 0;
+  transition: background-position 1.5s;
+}
+.two:hover {
+  background-position: 0 50%;
+}
+
+.three {
+  color: transparent;
+  text-shadow: 0 0 10px #ddd;
+  text-stroke: 10px;
+  transition: text-shadow 0.5s;
+}
+.three:hover {
+  text-shadow: 0 0 5px rgba(255,255,255,0.0);
+}

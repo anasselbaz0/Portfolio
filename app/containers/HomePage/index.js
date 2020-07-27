@@ -2,9 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import withStyles from '@material-ui/core/styles/withStyles';
 import PropTypes from 'prop-types';
-import { Button } from '@material-ui/core';
-import { Link } from 'react-router-dom';
 import COLORS from '../../utils/colors';
+import MyButton from '../../components/Button';
 
 const styles = {
   homePage: {
@@ -29,7 +28,7 @@ const styles = {
     fontWeight: '900',
     letterSpacing: '2px',
     color: COLORS.ACCENT,
-    fontSize: '3rem',
+    fontSize: '2.2rem',
     textAlign: 'center',
   },
   subtitle: {
@@ -73,9 +72,7 @@ function HomePage(props) {
           !
         </div>
         <div className={classes.actions}>
-          <Link className={classes.linkStyle} to="/projects">
-            <Button className={classes.button}>See my work</Button>
-          </Link>
+          <MyButton to="/projects">See my work</MyButton>
         </div>
       </div>
       <div className={classes.who}>

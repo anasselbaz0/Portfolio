@@ -9,6 +9,7 @@ import COLORS from '../../utils/colors';
 import Masthead from '../../components/Masthead/Masthead';
 import ProjectsPage from '../ProjectsPage/ProjectsPage';
 import GlobalStyle from '../../global-styles';
+import ResumePage from '../ResumePage/ResumePage';
 
 const styles = {
   application: {
@@ -20,7 +21,7 @@ const styles = {
     flexDirection: 'column',
   },
   content: {
-    paddingTop: '56px',
+    paddingTop: '8vh',
     height: '100vh',
     // width: '80%',
     // maxWidth: '1200px',
@@ -38,6 +39,7 @@ function App(props) {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/projects" component={ProjectsPage} />
+            <Route exact path="/resume" component={ResumePage} />
             <Route component={NotFoundPage} />
           </Switch>
         </div>

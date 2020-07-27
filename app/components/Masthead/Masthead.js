@@ -11,7 +11,7 @@ import Navigation from '../Navigation/Navigation';
 
 const styles = {
   masthead: {
-    height: '56px',
+    height: '8vh',
     backgroundColor: COLORS.BLUE_1,
     display: 'flex',
     alignItems: 'center',
@@ -42,7 +42,8 @@ const styles = {
   },
   logo: {
     color: COLORS.ACCENT,
-    fontFamily: 'Roboto',
+    fontFamily: 'Montserrat',
+    fontWeight: 600
   },
   linkStyle: {
     textDecoration: 'none',

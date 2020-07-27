@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import './glitch.css';
 import { Link } from 'react-router-dom';
 import COLORS from '../../utils/colors';
+import MyButton from '../../components/Button';
 
 const styles = {
   notFoundPage: {
@@ -55,9 +56,7 @@ class Index extends React.Component {
           What you&apos;re looking for may have been misplaced in Long Time
           Memory.
         </div>
-        <Link className={classes.linkStyle} to="/">
-          <Button className={classes.button}>Back to home</Button>
-        </Link>
+        <MyButton to='/'>Back to Home</MyButton>
       </div>
     );
   }

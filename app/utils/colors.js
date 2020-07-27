@@ -1,10 +1,12 @@
 const COLORS = {
   AppBackground: '#F0F0F5',
   BLUE_1: '#D8D8E6',
+  BLUE_2: '#e1e1e7',
   WHITE: '#fff',
   GRAY: '#6A6A6A',
-  ACCENT: '#143240',
+  ACCENT: '#255a74',
   SECENDARY: '#4747E6',
+  BACKGROUND_2: '#d9eaec',
   // SECENDARY: '#41C8F4',
 
   GRADIENT:
