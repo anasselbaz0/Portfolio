@@ -42,7 +42,7 @@ class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      links: ['home', 'projects', 'resume', 'contact me'],
+      links: ['home', 'projects', 'resume', 'contact'],
     };
   }
 
