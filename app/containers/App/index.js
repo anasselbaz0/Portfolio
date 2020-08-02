@@ -10,6 +10,7 @@ import Masthead from '../../components/Masthead/Masthead';
 import ProjectsPage from '../ProjectsPage/ProjectsPage';
 import GlobalStyle from '../../global-styles';
 import ResumePage from '../ResumePage/ResumePage';
+import ContactPage from '../ContactPage/ContactPage';
 
 const styles = {
   application: {
@@ -40,6 +41,7 @@ function App(props) {
             <Route exact path="/" component={HomePage} />
             <Route exact path="/projects" component={ProjectsPage} />
             <Route exact path="/resume" component={ResumePage} />
+            <Route exact path="/contact" component={ContactPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </div>
