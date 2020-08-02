@@ -7,10 +7,6 @@ jobs:
       name: node/default
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
-workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
+      - run:
+          name: Build
+          command: npm run build
