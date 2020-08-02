@@ -8,19 +8,18 @@ const styles = {
   bar: {
     marginTop: '5px',
     width: '100%',
-    height: '8vh',
     padding: '1rem',
     background: COLORS.BACKGROUND_2,
   },
-  right: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-    padding: '2rem 4rem',
-    margin: '1rem',
-    background: 'rgba(0, 0, 0, 0.05)',
-    borderBottom: '#999 solid 1px',
-  }
+  box: {
+    width: '80%',
+    margin: '1rem auto',
+    // display: 'flex',
+    // flexDirection: 'row',
+    // justifyContent: 'flex-end',
+    padding: '2rem',
+    background: 'rgba(0, 0, 0, 0.03)',
+  },
 };
 
 class ResumePage extends Component {
@@ -38,8 +37,14 @@ class ResumePage extends Component {
             Open Resume (pdf)
           </MyButton>
         </div>
-        <div className={classes.right}>
-f
+        <div className={classes.box}>
+
+        </div>
+        <div className={classes.box}>
+
+        </div>
+        <div className={classes.box}>
+
         </div>
       </div>
     );
