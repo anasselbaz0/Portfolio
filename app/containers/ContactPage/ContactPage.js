@@ -35,7 +35,8 @@ const styles = {
   },
   pen: {
     fontSize: '3rem',
-    padding: '5px'
+    padding: '5px',
+    color: COLORS.ACCENT,
   }
 }
 
