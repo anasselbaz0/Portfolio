@@ -14,21 +14,21 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     height: '100%',
-    // width: '60%',
     margin: 'auto',
-    textAlign: 'center'
+    textAlign: 'center',
   },
   subtitle: {
     color: COLORS.ACCENT,
     margin: '0 4rem',
     fontSize: '1.3rem',
     lineHeight: '2rem',
-    maxWidth: '800px'
+    width: '70%',
+    maxWidth: '800px',
   },
   mug: {
     height: '1.3rem',
     margin: '0 5px',
-    marginBottom: '5px'
+    marginBottom: '5px',
   },
   penButton: {
     margin: '2rem',
@@ -37,8 +37,8 @@ const styles = {
     fontSize: '3rem',
     padding: '5px',
     color: COLORS.ACCENT,
-  }
-}
+  },
+};
 
 class ContactPage extends Component {
 
@@ -56,11 +56,12 @@ class ContactPage extends Component {
             <span id="light">WITH ME ..</span>
           </div>
         </div>
-        <div className={classes.subtitle}>With your vision, my decent work, and a hefty amount of coffee <span><LocalCafeIcon className={classes.mug}/></span>, we can create a digital experience that is creative,
+        <div className={classes.subtitle}>With your vision, my decent work, and a hefty amount of coffee
+          <span><LocalCafeIcon className={classes.mug}/></span>, we can create a digital experience that is creative,
           beautiful, and memorable.
         </div>
         <IconButton className={classes.penButton} href='mailto:anasselbaz0@gmail.com?subject=Work%20Message'>
-          <BorderColorIcon className={classes.pen} />
+          <BorderColorIcon className={classes.pen}/>
         </IconButton>
 
       </div>

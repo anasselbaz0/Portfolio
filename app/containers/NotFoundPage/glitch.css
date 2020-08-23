@@ -4,11 +4,16 @@
   margin-bottom: 3.3rem;
 }
 
+.glitch {
+  width: 80%;
+  max-width: 800px;
+}
+
 .glitch, .glow {
   color: #DEC249;
   position: relative;
-  font-size: 3rem;
-  /*margin: 70px 200px;*/
+  font-size: 2rem;
+  letter-spacing: 2px ;
   animation: glitch 5s 5s infinite;
 }
 

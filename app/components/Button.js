@@ -8,7 +8,6 @@ import COLORS from '../utils/colors';
 const styles = {
   button: {
     backgroundColor: COLORS.ACCENT,
-    //backgroundImage: COLORS.GRADIENT,
     color: COLORS.WHITE,
     padding: '.5rem 3rem',
     fontSize: '.8rem',

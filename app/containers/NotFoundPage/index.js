@@ -37,7 +37,7 @@ class Index extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      message404: 'ERROR 404: Page not found',
+      message404: 'Looks like this page is missing. Don\'t worry though,our best man is on the case.',
     };
   }
 
@@ -52,10 +52,6 @@ class Index extends React.Component {
           <div className="glow">{this.state.message404}</div>
         </div>
         <div className="scanlines" />
-        <div className={classes.subTitle}>
-          What you&apos;re looking for may have been misplaced in Long Time
-          Memory.
-        </div>
         <MyButton to='/'>Back to Home</MyButton>
       </div>
     );

@@ -2,7 +2,6 @@ $main: #0053b3;
 $sec: #929292;
 
 
-
 #box {
   padding: 3rem;
   text-align: center;
@@ -16,7 +15,7 @@ $sec: #929292;
 /* flashlight ------------------------------------------------------ */
 
 #flashlight {
-  color: hsla(0,0%,0%,0);
+  color: hsla(0, 0%, 0%, 0);
   perspective: 80px;
   outline: none;
 }
@@ -44,11 +43,11 @@ $sec: #929292;
 #light {
   font-font: 'Montserrat';
   display: inline-block;
-  text-shadow: #a7a7a7 0 0 1px, rgba(255,255,255,0.1) 0 1px 3px;
+  text-shadow: #a7a7a7 0 0 1px, rgba(255, 255, 255, 0.1) 0 1px 3px;
 }
 
 #box:hover #light {
   text-shadow: #eaeaea 0 0 4px, #2238ac 0 0 20px;
   transform: rotateY(-30deg);
-  transition:         transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
+  transition: transform 0.3s cubic-bezier(0, 0.75, 0, 1), text-shadow 0.1s ease-out;
 }

@@ -13,6 +13,7 @@ const styles = {
     height: '100%',
   },
   who: {
+    fontSize: '.8rem',
     fontWeight: '200',
     textAlign: 'center',
   },
@@ -58,18 +59,10 @@ function HomePage(props) {
     <div className={classes.homePage}>
       <div className={classes.content}>
         <div className={classes.title}>
-          not your <br /> average <br /> software <br /> engineer
+          not your <br/> average <br/> software <br/> engineer
         </div>
         <div className={classes.subtitle}>
-          Get ready to turn your{' '}
-          <i>
-            <b>ideas</b>
-          </i>{' '}
-          to{' '}
-          <i>
-            <b>reality</b>
-          </i>{' '}
-          !
+          Get ready to turn your <b>ideas</b> to <b>reality</b>!
         </div>
         <div className={classes.actions}>
           <MyButton to="/projects">See my work</MyButton>

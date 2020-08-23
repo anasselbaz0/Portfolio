@@ -63,29 +63,7 @@ function Masthead(props) {
           </Link>
         </div>
         <Navigation />
-        <div>
-          <a target="_blank" href="https://github.com/anasselbaz0">
-            <Button variant="outlined" size="small" className={classes.link}>
-              <img
-                className={classes.linkContent}
-                src={github}
-                alt="My Github Account"
-              />
-            </Button>
-          </a>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/anass-elbaz-336809171/"
-          >
-            <Button variant="outlined" size="small" className={classes.link}>
-              <img
-                className={classes.linkContent}
-                src={linkedin}
-                alt="My LinkedIn Profile"
-              />
-            </Button>
-          </a>
-        </div>
+
       </div>
     </div>
   );

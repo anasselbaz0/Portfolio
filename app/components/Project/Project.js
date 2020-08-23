@@ -123,11 +123,8 @@ class Project extends React.Component {
               </div>
             </div>
           </div>
-          {/*<div className={classes.flexCenter}>*/}
-          {/*  <img className={classes.projectImage} src={image} alt="" />*/}
-          {/*</div>*/}
         </div>
-        <Button to={path}>View +</Button>
+        <Button to={path}>Project details</Button>
         <img className={classes.selectImage} src={select} alt="" />
       </div>
     );
